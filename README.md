@@ -1,8 +1,11 @@
 # HWID_CHNGER
 SIMPLE HWID CHANGER
 
+Randomly Generate HWID
 
 ![main](https://imgur.com/CgnpZff.png)
 
 
-![second](https://imgur.com/OgScdBG.png)
+Set your custom HWID
+
+![second](https://imgur.com/w3NtfPv.png)
