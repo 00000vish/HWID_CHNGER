@@ -1,5 +1,6 @@
 # HWID_CHNGER
-SIMPLE HWID CHANGER
+This is a SIMPLE HWID CHANGER.
+> Use? can be used to extend program trails, or get ubanned from f2p games .
 
 Randomly Generate HWID
 
