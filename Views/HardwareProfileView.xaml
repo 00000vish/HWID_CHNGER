@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="HWID_CHANGER.Views.HardwareProfileView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:local="clr-namespace:HWID_CHANGER.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Label Content="Detected HWID"
+               HorizontalAlignment="Left"/>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            <Label Content="{Binding HwidValue}"/>
+
+            <Button Style="{StaticResource MahApps.Styles.Button.Flat}"
+                    Background="{StaticResource MahApps.Brushes.Accent4}"
+                    Command="{Binding RandomizeCommand}">
+                <iconPacks:PackIconMaterial Kind="Autorenew"
+                                                  VerticalAlignment="Center"/>
+            </Button>
+            <Button Style="{StaticResource MahApps.Styles.Button.Flat}"
+                    Background="{StaticResource MahApps.Brushes.Accent4}"
+                    Command="{Binding InputHwidCommand}">
+                <iconPacks:BootstrapIcons Kind="InputCursorText"/>
+            </Button>
+            <Button Style="{StaticResource MahApps.Styles.Button.Flat}"
+                    Background="{StaticResource MahApps.Brushes.Accent4}"
+                    Command="{Binding ChangeHwidCommand}">
+                <iconPacks:PackIconMaterial Kind="Check"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
